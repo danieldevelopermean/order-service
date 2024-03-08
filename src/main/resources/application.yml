@@ -13,7 +13,7 @@ spring:
   r2dbc:
     username: user
     password: password
-    url: r2dbc:postgresql://localhost:5432/polardb
+    url: r2dbc:postgresql://localhost:5432/polardb_order
     pool:
       max-create-connection-time: 2s
       initial-size: 5
@@ -21,7 +21,7 @@ spring:
   flyway:
     user: ${spring.r2dbc.username}
     password: ${spring.r2dbc.password}
-    url: jdbc:postgresql://localhost:5432/polardb
+    url: jdbc:postgresql://localhost:5432/polardb_order
   config:
     import: "" # When using Config Service, add "optional:configserver:"
   cloud:
